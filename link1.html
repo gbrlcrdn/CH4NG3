@@ -55,6 +55,47 @@ body {background-color: white;
    font-family: helvetica;}
 h1   {color: blue;}
 p    {color: red;}
+  
+  
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: white;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
 </style>
 </head>
 <body>
@@ -72,21 +113,27 @@ p    {color: red;}
 
 <div class="row">
    <div class="column">
-    <h1>Open Government</h1>
-    <p><a href="https://open.canada.ca/en">Open Government</a><br />
-<a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108">Directive on Open Government</a><br />
-<a href="https://open.canada.ca/en/content/canadas-2018-2020-national-action-plan-open-government">Canada’s 2018-2020 National Action Plan on Open Government</a><br />
-     </p>
+    <div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+	<img alt="#CH4NG3" src="CH4NG3_3.gif" style="width:300px;height:300px;" width="300" /></div>
+
+<div class="flip-card-back">
+	<img alt="#CH4NG3" src="CH4NG3_2.gif" style="width:300px;height:300px;" width="300" /></div>
+</div>
+</div>
   </div>
   
    <div class="column">
-    <h1>Platforms</h1>
-    <p><a href="https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html">Government of Canada Digital Playbook (draft)</a></br>
-<a href="https://gccollab.ca/">GCcollab</a></br>
-<a href="https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html">Algorithmic Impact Assessment (v0.2)</a><br />
-<a href="https://wet-boew.github.io/wet-boew/index-en.html">Web Experience Toolkit (WET)</a></br >
-<a href="https://ckan.org/">Ckan</a></br>
-<a href="https://pol.is/home">Pol.is</a></p>
+    <div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+	<img alt="#CH4NG3" src="CH4NG3_3.gif" style="width:300px;height:300px;" width="300" /></div>
+
+<div class="flip-card-back">
+	<img alt="#CH4NG3" src="CH4NG3_2.gif" style="width:300px;height:300px;" width="300" /></div>
+</div>
+</div>
   </div>
   
   
