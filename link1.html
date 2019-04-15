@@ -45,7 +45,13 @@ padding: 20px;
   clear: both;
 }
 
-
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+	
 body {background-color: white;
    font-family: helvetica;
 align-content: center;}
@@ -124,7 +130,8 @@ p    {color: red;}
 	   </div>  
    </div>  
 	    </div>  
-
+	
+ <div class="column">
     <div class="flip-card">
 <div class="flip-card-inner">
 <div class="flip-card-front">
