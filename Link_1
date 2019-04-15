@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+  .header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+  
+  /* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: blue;
+}
+  
+  /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+  
+body {background-color: white;
+   font-family: helvetica;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+  <div class="header">
+  <h1>#CH4NG3</h1>
+  <p></p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+</div>
+
+<div class="row">
+   <div class="column">
+    <h1>Open Government</h1>
+    <p><a href="https://open.canada.ca/en">Open Government</a><br />
+<a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108">Directive on Open Government</a><br />
+<a href="https://open.canada.ca/en/content/canadas-2018-2020-national-action-plan-open-government">Canada’s 2018-2020 National Action Plan on Open Government</a><br />
+     </p>
+  </div>
+  
+   <div class="column">
+    <h1>Platforms</h1>
+    <p><a href="https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html">Government of Canada Digital Playbook (draft)</a></br>
+<a href="https://gccollab.ca/">GCcollab</a></br>
+<a href="https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html">Algorithmic Impact Assessment (v0.2)</a><br />
+<a href="https://wet-boew.github.io/wet-boew/index-en.html">Web Experience Toolkit (WET)</a></br >
+<a href="https://ckan.org/">Ckan</a></br>
+<a href="https://pol.is/home">Pol.is</a></p>
+  </div>
+  
+  
+</div>
+
+</body>
+</html>
