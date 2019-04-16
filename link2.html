@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+  .header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+  
+  /* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+padding: 20px;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: red;
+}
+  
+    /* Footer links */
+.footernav a {
+  float: left;
+  color: red;
+font-family: helvetica;
+  text-align: center;
+   padding: 14px 16px;
+  text-decoration: none;
+}
+  
+  
+/* Footer links - change color on hover */
+.footernav a:hover {
+  background-color: #ddd;
+  color: blue;
+font-family: helvetica;
+}
+
+  /* Create five equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+  
+    .footer {
+  background-color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+body {background-color: white;
+   font-family: helvetica;
+align-content: center;}
+
+
+  
+  .collapsible {
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active, .collapsible:hover {
+  background-color: blue;
+  color:white;
+}
+
+.content {
+  padding: 18px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  color:blue;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="index.html">#CH4NG3</a>
+  <a href="link1.html">1</a>
+  <a href="#">3</a>
+</div>
+
+
+<button class="collapsible">Design with users</button>
+<div class="content">
+  <p>Research with users to understand their needs and the problems we want to solve. Conduct ongoing testing with users to guide design and development.</p>
+</div>
+<button class="collapsible">Iterate and improve frequently</button>
+<div class="content">
+  <p>Develop services using agile, iterative and user-centred methods. Continuously improve in response to user needs. Try new things, start small and scale up.</p>
+</div>
+<button class="collapsible">Work in the open by default</button>
+<div class="content">
+  <p>Share evidence, research and decision making openly. Make all non-sensitive data, information, and new code developed in delivery of services open to the outside world for sharing and reuse under an open licence.</p>
+</div>
+<button class="collapsible">Use open standards and solutions</button>
+<div class="content">
+  <p>Leverage open standards and embrace leading practices, including the use of open source software where appropriate. Design for services and platforms that are seamless for Canadians to use no matter what device or channel they are using.</p>
+</div>
+<button class="collapsible">Address security and privacy risks</button>
+<div class="content">
+  <p>Take a balanced approach to managing risk by implementing appropriate privacy and security measures. Make security measures frictionless so that they do not place a burden on users.</p>
+</div>
+<button class="collapsible">Build in accessibility from the start</button>
+<div class="content">
+  <p>Services should meet or exceed accessibility standards. Users with distinct needs should be engaged from the outset to ensure what is delivered will work for everyone.</p>
+</div>
+<button class="collapsible">Empower staff to deliver better services</button>
+<div class="content">
+  <p>Make sure that staff have access to the tools, training and technologies they need. Empower the team to make decisions throughout the design, build and operation of the service.</p>
+</div>
+<button class="collapsible">Be good data stewards</button>
+<div class="content">
+  <p>Collect data from users only once and reuse wherever possible. Ensure that data is collected and held in a secure way so that it can easily be reused by others to provide services.</p>
+</div>
+<button class="collapsible">Design ethical services</button>
+<div class="content">
+  <p>Make sure that everyone receives fair treatment. Comply with ethical guidelines in the design and use of systems which automate decision making (such as the use of artificial intelligence).</p>
+</div>
+<button class="collapsible">Collaborate widely</button>
+<div class="content">
+  <p>Create multidisciplinary teams with the range of skills needed to deliver a common goal. Share and collaborate in the open. Identify and create partnerships which help deliver value to users.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+  <div class="footer">
+    <div class="footernav">
+<a href="https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html">Government of Canada Digital Standards: Improving government services in the Digital Age</a>
+</div>
+    </div>
+
+
+</body>
+</html>
