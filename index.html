@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   
   .header {
@@ -31,30 +32,62 @@
   color: blue;
 }
   
-  /* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
+#container { margin: 0%; }
+
+#circle { position: relative; width: 100%; padding-bottom: 50%; overflow: hidden; }
+
+#circle text { font-family: 'Helvetica', Arial; font-size: 6px; font-weight:bold;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 2000px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 10s;
+     -moz-animation-duration: 10s;
+      -ms-animation-duration: 10s;
+       -o-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
 }
-  
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
 body {background-color: white;
    font-family: helvetica;}
-h1   {color: blue;}
-p    {color: red;}
+
 </style>
 </head>
 <body>
@@ -70,25 +103,22 @@ p    {color: red;}
   <a href="#">3</a>
 </div>
 
-<div class="row">
-   <div class="column">
-    <h1>Open Government</h1>
-    <p><a href="https://open.canada.ca/en">Open Government</a><br />
-<a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=28108">Directive on Open Government</a><br />
-<a href="https://open.canada.ca/en/content/canadas-2018-2020-national-action-plan-open-government">Canada’s 2018-2020 National Action Plan on Open Government</a><br />
-     </p>
-  </div>
-  
-   <div class="column">
-    <h1>Platforms</h1>
-    <p><a href="https://canada-ca.github.io/digital-playbook-guide-numerique/en/overview.html">Government of Canada Digital Playbook (draft)</a></br>
-<a href="https://gccollab.ca/">GCcollab</a></br>
-<a href="https://canada-ca.github.io/digital-playbook-guide-numerique/views-vues/automated-decision-automatise/en/algorithmic-impact-assessment.html">Algorithmic Impact Assessment (v0.2)</a><br />
-<a href="https://wet-boew.github.io/wet-boew/index-en.html">Web Experience Toolkit (WET)</a></br >
-<a href="https://ckan.org/">Ckan</a></br>
-<a href="https://pol.is/home">Pol.is</a>
-<a href="https://sandstorm.io">Sandstorm.io</a></p>
-  </div>
+<div id="container">
+<div id="circle">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+    <defs>
+        <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+    </defs>
+    <circle cx="150" cy="100" r="75" fill="none"/>
+    <g>
+        <use xlink:href="#circlePath" fill="none"/>
+        <text fill="blue">
+            <textPath xlink:href="#circlePath">"We shape our tools, and thereafter our tools shape us." - John Culkin, often misattributed to Marshall McLuhan</textPath>
+        </text>
+    </g>
+</svg>
+</div>
+</div>
   
   
 </div>
