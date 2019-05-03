@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+  .header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+  
+  /* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+padding: 20px;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: red;
+}
+  
+    /* Footer links */
+.footernav a {
+  float: left;
+  color: red;
+font-family: helvetica;
+  text-align: center;
+  text-decoration: none;
+}
+  
+  
+/* Footer links - change color on hover */
+.footernav a:hover {
+  color: blue;
+font-family: helvetica;
+}
+
+  /* Create five equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+  
+    .footer {
+  background-color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+body {background-color: white;
+   font-family: helvetica;
+align-content: center;}
+h1   {color: blue;}
+p    {color: red;}
+  
+  
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  padding: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #000000;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="index.html">#CH4NG3</a>
+  <a href="link1.html">1</a>
+  <a href="link2.html">2</a>
+</div>
+
+<div class="row">
+   <div class="column">
+    <div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <img alt="#CH4NG3" src="open_governance.gif" style="width:200px;height:200px;" width="200" /></div>
+
+<div class="flip-card-back">
+  <img alt="#CH4NG3" src="Algorithmic_govern.gif" style="width:200px;height:200px;" width="200" /></div>
+</div>  
+</div>  
+      </div> 
+
+ <div class="column">
+    <div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <img alt="#CH4NG3" src="digital_ethics.gif" style="width:200px;height:200px;" width="200" /></div>
+
+<div class="flip-card-back">
+  <img alt="#CH4NG3" src="Digital_standards.gif" style="width:200px;height:200px;" width="200" /></div>
+</div>  
+</div>  
+      </div>  
+  
+ <div class="column">
+    <div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <img alt="#CH4NG3" src="Behavioral_psychology.gif" style="width:200px;height:200px;" width="200" /></div>
+
+<div class="flip-card-back">
+  <img alt="#CH4NG3" src="organizational_psychology.gif" style="width:200px;height:200px;" width="200" /></div>
+</div>  
+</div>  
+      </div> 
+  
+  <div class="column">
+    <div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <img alt="#CH4NG3" src="participatory_tech.gif" style="width:200px;height:200px;" width="200" /></div>
+
+<div class="flip-card-back">
+  <img alt="#CH4NG3" src="automated_tech.gif" style="width:200px;height:200px;" width="200" /></div>
+</div>  
+</div>  
+      </div> 
+  
+  <div class="column">
+    <div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <img alt="#CH4NG3" src="collective_intelligence.gif" style="width:200px;height:200px;" width="200" /></div>
+
+<div class="flip-card-back">
+  <img alt="#CH4NG3" src="Artificial_intelligence.gif" style="width:200px;height:200px;" width="200" /></div>
+   </div>  
+   </div>  
+	    </div> 
+  
+    <div class="footer">
+    <div class="footernav">
+<a href="https://www.youtube.com/watch?v=GVXIpWamVLc">Audrey Tang, Digital Minister of Taiwan, presenting on social innovation and open governance at the Asia Society (2018)</a>
+</div>
+    </div>
+  
+</div>
+
+</body>
+</html>
